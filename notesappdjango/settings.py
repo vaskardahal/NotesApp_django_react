@@ -82,7 +82,15 @@ WSGI_APPLICATION = 'notesappdjango.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+        'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pmfqqhwt',
+        'USER': 'pmfqqhwt', 
+        'PASSWORD': 'ZuZfFPIzZHR9eVJ_RXQ3RzCfyGfigZnR', 
+        'HOST': 'mahmud.db.elephantsql.com',
+        'PORT': '5432'
+    }, 
+    'default_old': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
